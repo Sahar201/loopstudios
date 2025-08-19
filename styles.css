@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Alata', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/desktop/image-hero.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* Interactive Section */
+.interactive {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+}
+
+.interactive img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.text-box {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Creations Section */
+.creations {
+    padding: 50px;
+    text-align: center;
+}
+
+.creations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+}
+
+.item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        font-size: 1.5rem;
+        height: 40vh;
+    }
+
+    .interactive {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .creations-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
