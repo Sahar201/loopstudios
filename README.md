@@ -44,5 +44,5 @@ It helped me strengthen my fundamentals in **HTML** and **CSS**, and gave me con
 
 ---
 
-🔗 Live Demo: 
+🔗 **Live Demo:**
 https://loopstudios-ecru-iota.vercel.app/
